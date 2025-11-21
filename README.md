@@ -1,27 +1,61 @@
 # LocalAssistantRAG
 
-On-device RAG assistant: local embeddings + vector DB retrieval for context-aware responses.
+On-device RAG assistant — local embeddings + vector DB retrieval for context-aware responses.
 
-Minimal local chatbot project using LangChain-style tooling.
+A minimal, self-contained example that demonstrates how to:
 
-Purpose
-- Provide a small workspace that demonstrates embedding and local vector storage and a simple main entrypoint.
+- Create embeddings from local data
+- Store and query embeddings in a local vector store
+- Use Retrieval-Augmented Generation (RAG) to answer questions from your data
 
-Quick start
-1. Create a Python virtual environment and activate it:
+## Features
 
-    powershell
+- On-device operation (no external persistent cloud required)
+- Simple, easy-to-read Python code with a focus on embedders and vector storage
+- Ready to extend with different embedding models or vector backends
 
-    python -m venv .venv
-    .\.venv\Scripts\Activate.ps1
+## Quick start
+
+1. Create and activate a virtual environment (PowerShell):
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
 
 2. Install dependencies:
 
-    pip install -r requirements.txt
+```powershell
+pip install -r requirements.txt
+```
 
-3. Run the app:
+3. Run the example app:
 
-    python main.py
+```powershell
+python main.py
+```
 
-Notes
-- Edit this file to add examples, attribution, and usage instructions. Replace the tagline above if you'd like a different phrasing.
+## Example usage
+
+- `embed_and_store.py` — script to convert local files into embeddings and store them in the included vector data directory.
+- `main.py` — small example entrypoint that shows how to query the vector store and produce context-aware responses.
+
+## Repository layout
+
+- `embed_and_store.py` — create embeddings and store them
+- `vector_db.py` — vector store wrapper (local file-backed)
+- `main.py` — example app / entrypoint
+- `requirements.txt` — Python deps
+- `qdrant_storage/` — local vector storage (ignored from git large files)
+
+## Contributing
+
+Contributions welcome. If you add features or change behavior, please open a pull request with a short description and tests or examples where appropriate.
+
+## License
+
+This repo previously included an MIT license file. If you want to keep the project licensed, add a `LICENSE` file at the project root.
+
+---
+
+If you want, I can add badges, CI (GitHub Actions) for linting or tests, or an example walkthrough section. Tell me what tone you prefer (developer-focused, tutorial, or README-as-landing-page) and I will adapt the content.
