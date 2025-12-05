@@ -1,4 +1,3 @@
-
 # Used once to create embedding collection in Qdrant
 from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient

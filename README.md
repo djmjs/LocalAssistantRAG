@@ -11,7 +11,7 @@
 ## Additional Scripts
 
 ### `embed_and_store.py`
-This script is used to embed data and store it in the Qdrant vector database. Running the following command will be sufficient for this task:
+This script is used to embed data and store it in the Qdrant vector database. Running the following command will be sufficient for this task. For detailed instructions, see [docs/embed_and_store.md](docs/embed_and_store.md)
 ```powershell
 python embed_and_store.py
 ```
@@ -116,9 +116,6 @@ Additionaly! This script is used to manage the Qdrant vector database, such as c
      ```powershell
      docker-compose logs
      ```
-
-2. **Check FastAPI Logs**:  
-   - Look at the terminal output where `main.py` is running for any errors.
 
 ---
 
