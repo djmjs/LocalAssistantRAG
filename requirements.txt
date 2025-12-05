@@ -4,3 +4,5 @@ requests
 jinja2
 qdrant-client
 sentence-transformers
+langchain_community
+python-multipart

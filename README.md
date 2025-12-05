@@ -17,7 +17,7 @@ python embed_and_store.py
 ```
 
 ### `vector_db.py`
-This script is used to manage the Qdrant vector database, such as creating collections. It is useful for database setup and management tasks. For detailed instructions, see [docs/vector_db.md](docs/vector_db.md).
+Additionaly! This script is used to manage the Qdrant vector database, such as creating collections. It is useful for database setup and management tasks. For detailed instructions, see [docs/vector_db.md](docs/vector_db.md).
 
 ## 1. Fork and Clone the Repository
 1. **Fork the Repository**:  

@@ -24,7 +24,7 @@ services:
     ports:
       - "8080:80"
     environment:
-      - MODEL_ID=sentence-transformers/all-MiniLM-L6-v2
+      - MODEL_ID=sentence-transformers/Qwen/Qwen3-Embedding-0.6B
     restart: unless-stopped
 
 volumes:
