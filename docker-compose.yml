@@ -18,6 +18,15 @@ services:
       - qdrant_data:/qdrant/storage
     restart: unless-stopped
 
+  embedding:
+    image: ghcr.io/huggingface/text-embeddings-inference:1.8
+    container_name: hf_embedding
+    ports:
+      - "8080:80"
+    environment:
+      - MODEL_ID=sentence-transformers/all-MiniLM-L6-v2
+    restart: unless-stopped
+
 volumes:
   ollama_vb_models:
   qdrant_data:

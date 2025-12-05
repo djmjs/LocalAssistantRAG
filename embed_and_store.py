@@ -27,8 +27,6 @@ print(f"Collection '{COLLECTION}' created successfully.")
 
 
 
-
-
 # Embedding model (local)
 MODEL_NAME = "Qwen/Qwen3-Embedding-0.6B"
 embed_model = SentenceTransformer(MODEL_NAME)
